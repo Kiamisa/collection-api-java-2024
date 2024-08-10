@@ -58,5 +58,9 @@ public class CatalogoLivros {
         catalogoLivros.adicionarLivro("O Senhor dos Anéis", "J.R.R. Tolkien", 1954);
         catalogoLivros.adicionarLivro("1984", "George Orwell", 1949);
         catalogoLivros.adicionarLivro("Orgulho e Preconceito", "Jane Austen", 1813);
+
+        catalogoLivros.pesquisarPorAutor("Miguel de Cervantes").forEach(System.out::println);
+        catalogoLivros.pesquisarPorIntervaloAnos(1600, 1900).forEach(System.out::println);
+        System.out.println(catalogoLivros.pesquisarPorTitulo("O Senhor dos Anéis"));
     }
 }
